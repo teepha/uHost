@@ -3,13 +3,12 @@
 }
 
 body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Josefin Sans", sans-serif, "Trebuchet MS";
   margin: 0;
 }
 
 #product-overview {
-  background: #ff1b68;
+  background: url("images/adult-beautiful-blur-712413.jpg");
   width: 100%;
   height: 500px;
   padding: 10px;
@@ -17,7 +16,6 @@ body {
 
 #product-overview h1 {
   color: white;
-  font-family: "Josefin Sans", sans-serif, "Trebuchet MS";
 }
 
 .section-title {
@@ -31,12 +29,22 @@ body {
 
 .main-header > div {
   display: inline-block;
+  vertical-align: middle;
+}
+
+.main-header__brand {
+  color: #f97694;
+  text-decoration: none;
+  font-family: "Croissant One", cursive;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 .main-nav {
   display: inline-block;
   text-align: right;
-  width: 80%;
+  width: calc(100% - 100px);
+  vertical-align: middle;
 }
 
 .main-nav__items {
@@ -47,4 +55,21 @@ body {
 
 .main-nav__item {
   display: inline-block;
+  margin: 0 15px;
 }
+
+.main-nav__item a {
+  text-decoration: none;
+  /* margin: 0 10px; */
+  padding: 3px 0px;
+  font-size: 15px;
+  color: #48555b;
+  font-weight: bold;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: #f97694;
+  border-bottom: 2px solid #f97694;
+}
+
