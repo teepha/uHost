@@ -20,6 +20,79 @@ body {
 
 .section-title {
   color: #2ddf5c;
+  text-align: center;
+}
+
+/* #plans div {
+  align-content: center;
+} */
+
+.plan {
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  box-shadow: 0px 10px 50px 0px rgba(84, 110, 122, 0.15);
+  text-align: center;
+  padding: 16px;
+  margin: 8px;
+  display: inline-block;
+  width: 30%;
+  vertical-align: middle;
+}
+
+.plan__annotation {
+  padding: 8px;
+}
+
+.plan__title {
+  color: #546e7a;
+  font-size: 18px;
+}
+
+.plan__price {
+  color: #263238;
+  font-size: 30px;
+}
+
+.plan__features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan__features li {
+  padding: 15px;
+}
+
+.plan__features li:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.plan__button {
+  padding: 25px 0;
+  background: #f9f9f9;
+}
+
+.button {
+  background-color: #f97794;
+  padding: 14px 32px 10px;
+  border-radius: 30px;
+  color: #fff;
+  font: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  background-color: #f75477;
+  padding: 17px 35px 13px;
+}
+
+.button:focus {
+  outline: none;
 }
 
 .main-header {
@@ -72,4 +145,3 @@ body {
   color: #f97694;
   border-bottom: 2px solid #f97694;
 }
-
