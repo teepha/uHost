@@ -19,13 +19,23 @@ body {
 }
 
 .section-title {
-  color: #2ddf5c;
+  color: #263238;
   text-align: center;
 }
 
-/* #plans div {
-  align-content: center;
-} */
+.section-title:before {
+  content: "";
+  position: absolute;
+  margin-top: 30px;
+  width: 80px;
+  height: 2px;
+  background: #f97794;
+  transition: 0.3s;
+}
+
+#plans > div {
+  text-align: center;
+}
 
 .plan {
   background: #ffffff;
@@ -42,6 +52,7 @@ body {
 
 .plan__annotation {
   padding: 8px;
+  color: #263238;
 }
 
 .plan__title {
@@ -50,7 +61,7 @@ body {
 }
 
 .plan__price {
-  color: #263238;
+  color: #000000;
   font-size: 30px;
 }
 
@@ -60,8 +71,13 @@ body {
   margin: 0;
 }
 
+.plan > h3 {
+  color: #263238;
+}
+
 .plan__features li {
   padding: 15px;
+  color: #546e7a;
 }
 
 .plan__features li:nth-child(odd) {
@@ -95,6 +111,43 @@ body {
   outline: none;
 }
 
+#key-features {
+  margin-top: 70px;
+}
+
+.key-feature__list {
+  list-style: none;
+  margin: 0;
+  background: #f97794;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.key-feature {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  color: #fff;
+  border: 1px dotted #fff;
+  border-radius: 4px;
+  padding: 30px;
+  margin: 0 15px;
+  vertical-align: top;
+}
+
+.key-feature__image {
+  margin: auto;
+  font-size: 42px;
+  color: #fff;
+}
+
+.key-feature__description {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  margin: 10px 0;
+}
+
 .main-header {
   width: 100%;
   padding: 8px;
@@ -106,7 +159,7 @@ body {
 }
 
 .main-header__brand {
-  color: #f97694;
+  color: #f75477;
   text-decoration: none;
   font-family: "Croissant One", cursive;
   font-weight: bold;
@@ -144,4 +197,32 @@ body {
 .main-nav__item a:active {
   color: #f97694;
   border-bottom: 2px solid #f97694;
+}
+
+.main-footer {
+  border-top: 1px solid #eaeaea;
+  background-color: #ffffff;
+  padding: 20px 0 10px;
+  margin-top: 48px;
+}
+.main-footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main-footer__link {
+  display: inline-block;
+  margin: 0 16px;
+}
+
+.main-footer__link a {
+  text-decoration: none;
+  color: #546e7a;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+  color:  #f75477;
 }
