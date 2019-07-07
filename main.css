@@ -21,6 +21,7 @@ body {
 .section-title {
   color: #263238;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .section-title:before {
@@ -148,6 +149,80 @@ body {
   margin: 10px 0;
 }
 
+#team-members {
+  margin-top: 70px;
+}
+
+.team-members__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.team-member {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  margin: 0 10px;
+  box-shadow: 0px 10px 50px 0px rgba(84, 110, 122, 0.15);
+  border-radius: 0px;
+  background: #f9f9f9;
+}
+
+.team-member:hover {
+  box-shadow: 0px 10px 50px 0px rgba(23, 30, 34, 0.3);
+  /* transition: all 0.3s; */
+}
+
+.team-member img {
+  width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.team-member .team-member__details {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.team-member__details h4 {
+  margin: 0 0 5px;
+  font-size: 18px;
+  color: #263238;
+}
+
+.team-member__details p {
+  margin: 0 0 15px;
+  font-size: 14px;
+  color: #546e7a;
+}
+
+.social__links {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.team-member .social__link {
+  list-style: none;
+  display: inline-block;
+  text-decoration: none;
+  height: 34px;
+  line-height: 34px;
+  width: 34px;
+  background: #fff;
+  border-radius: 50px;
+  padding-top: 3px;
+}
+
+.team-member .social__link a {
+  text-align: center;
+  color: #f97794;
+  text-decoration: none;
+}
+
 .main-header {
   width: 100%;
   padding: 8px;
@@ -224,5 +299,5 @@ body {
 
 .main-footer__link a:hover,
 .main-footer__link a:active {
-  color:  #f75477;
+  color: #f75477;
 }
