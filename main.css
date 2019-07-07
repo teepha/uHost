@@ -1,11 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Josefin Sans", sans-serif, "Trebuchet MS";
-  margin: 0;
-}
 
 #product-overview {
   background: url("images/adult-beautiful-blur-712413.jpg");
@@ -88,28 +80,6 @@ body {
 .plan__button {
   padding: 25px 0;
   background: #f9f9f9;
-}
-
-.button {
-  background-color: #f97794;
-  padding: 14px 32px 10px;
-  border-radius: 30px;
-  color: #fff;
-  font: inherit;
-  font-size: 14px;
-  font-weight: bold;
-  border: 1.5px solid transparent;
-  cursor: pointer;
-}
-
-.button:hover,
-.button:active {
-  background-color: #f75477;
-  padding: 17px 35px 13px;
-}
-
-.button:focus {
-  outline: none;
 }
 
 #key-features {
@@ -221,83 +191,4 @@ body {
   text-align: center;
   color: #f97794;
   text-decoration: none;
-}
-
-.main-header {
-  width: 100%;
-  padding: 8px;
-}
-
-.main-header > div {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.main-header__brand {
-  color: #f75477;
-  text-decoration: none;
-  font-family: "Croissant One", cursive;
-  font-weight: bold;
-  font-size: 22px;
-}
-
-.main-nav {
-  display: inline-block;
-  text-align: right;
-  width: calc(100% - 100px);
-  vertical-align: middle;
-}
-
-.main-nav__items {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.main-nav__item {
-  display: inline-block;
-  margin: 0 15px;
-}
-
-.main-nav__item a {
-  text-decoration: none;
-  /* margin: 0 10px; */
-  padding: 3px 0px;
-  font-size: 15px;
-  color: #48555b;
-  font-weight: bold;
-}
-
-.main-nav__item a:hover,
-.main-nav__item a:active {
-  color: #f97694;
-  border-bottom: 2px solid #f97694;
-}
-
-.main-footer {
-  border-top: 1px solid #eaeaea;
-  background-color: #ffffff;
-  padding: 20px 0 10px;
-  margin-top: 48px;
-}
-.main-footer__links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.main-footer__link {
-  display: inline-block;
-  margin: 0 16px;
-}
-
-.main-footer__link a {
-  text-decoration: none;
-  color: #546e7a;
-}
-
-.main-footer__link a:hover,
-.main-footer__link a:active {
-  color: #f75477;
 }
