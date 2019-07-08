@@ -1,0 +1,70 @@
+main {
+  padding: 110px 0;
+  background: url("../images/action-plan-brainstorming-complex-212286.jpg");
+}
+
+.package {
+  width: 70%;
+  margin: 0 0 100px 30px;
+  padding: 15px;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.package:hover,
+.package:active {
+  box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.5);
+  border: 1px solid #aca5b4;
+}
+
+.package a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 15px;
+}
+
+.package__subtitle {
+  color: #a5a4a2;
+}
+
+.package__info {
+  padding: 16px;
+  color: #546e7a;
+  font-size: 18px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+#plus__plan {
+  background: rgba(245, 249, 249, 0.85);
+}
+
+#free__plan {
+  background: rgba(213, 205, 220, 0.85);
+  float: right;
+  margin-right: 30px;
+  margin-left: 0;
+}
+
+#premium__plan {
+  background: rgba(243, 234, 214, 0.85);
+}
+
+#plus__plan .package__subtitle {
+  color: rgb(207, 184, 134);
+}
+
+#free__plan .package__subtitle {
+  color: #f9f9f9;
+}
+
+#premium__plan .package__subtitle {
+  color: rgb(194, 178, 209);
+}
+
+.packages__footer {
+  margin: 0;
+}
