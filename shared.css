@@ -9,7 +9,12 @@ body {
 
 .main-header {
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ffffff;
   padding: 8px 64px;
+  z-index: 1;
 }
 
 .main-header > div {
