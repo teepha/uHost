@@ -1,5 +1,6 @@
 main {
-  padding: 130px 0 0;
+  margin-top: 3rem;
+  padding: 3rem 0 0;
 }
 
 .background {
@@ -13,8 +14,8 @@ main {
 
 .package {
   width: 70%;
-  margin: 0 0 82px 30px;
-  padding: 15px;
+  margin: 0 0 3rem 1.9rem;
+  padding: 1rem;
   border-radius: 4px;
   background: #fff;
   position: relative;
@@ -30,18 +31,18 @@ main {
   text-decoration: none;
   color: inherit;
   display: block;
-  padding: 15px;
+  padding: 1rem;
 }
 
 .package__badge {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 20px;
-  font-size: 12px;
+  margin: 1.25rem;
+  font-size: 0.75rem;
   color: white;
   background: rgb(207, 184, 134);
-  padding: 8px;
+  padding: 0.5rem;
   border-radius: 5px;
 }
 
@@ -50,9 +51,9 @@ main {
 }
 
 .package__info {
-  padding: 16px;
+  padding: 1rem;
   color: #546e7a;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 .clearfix {
@@ -66,7 +67,7 @@ main {
 #free__plan {
   background: rgba(213, 205, 220, 0.85);
   float: right;
-  margin-right: 30px;
+  margin-right: 1.25rem;
   margin-left: 0;
 }
 

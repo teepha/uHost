@@ -1,5 +1,6 @@
 #product-overview {
-  background: url("images/adult-beautiful-blur-712413.jpg") left 10% bottom 20%/cover no-repeat border-box;
+  background: url("images/adult-beautiful-blur-712413.jpg") left 10% bottom 30% /
+    cover no-repeat border-box;
   /* background-image: url("images/adult-beautiful-blur-712413.jpg");
   background-size: cover;
   background-position: left 10% bottom 20%;
@@ -9,15 +10,15 @@
   /* background-image: linear-gradient(red 50%, blue 70%, transparent); */
   /* background-image: radial-gradient(circle at top, red, blue, green); */
   width: 100%;
-  height: 530px;
-  padding: 5px;
-  margin-top: 48px;
+  height: 41rem;
+  padding: 0.35rem;
+  margin-top: 3rem;
   position: relative;
 }
 
 #product-overview h1 {
   color: white;
-  font-family: 'Croissant One', cursive;
+  font-family: "Croissant One", cursive;
   position: absolute;
   bottom: 5%;
   left: 3%;
@@ -32,9 +33,9 @@
 .section-title:before {
   content: "";
   position: absolute;
-  margin-top: 30px;
-  width: 80px;
-  height: 2px;
+  margin-top: 1.9rem;
+  width: 5rem;
+  height: 0.12rem;
   background: #f97794;
   transition: 0.3s;
 }
@@ -49,26 +50,26 @@
   border-radius: 4px;
   box-shadow: 0px 10px 50px 0px rgba(84, 110, 122, 0.15);
   text-align: center;
-  padding: 16px;
-  margin: 8px;
+  padding: 1rem;
+  margin: 0.5rem;
   display: inline-block;
   width: 30%;
   vertical-align: middle;
 }
 
 .plan__annotation {
-  padding: 8px;
+  padding: 0.5rem;
   color: #263238;
 }
 
 .plan__title {
   color: #546e7a;
-  font-size: 18px;
+  font-size: 1.13rem;
 }
 
 .plan__price {
   color: #000000;
-  font-size: 30px;
+  font-size: 1.88rem;
 }
 
 .plan__features {
@@ -82,7 +83,7 @@
 }
 
 .plan__features li {
-  padding: 15px;
+  padding: 1rem;
   color: #546e7a;
 }
 
@@ -91,19 +92,19 @@
 }
 
 .plan__button {
-  padding: 25px 0;
+  padding: 1.58rem 0;
   background: #f9f9f9;
 }
 
 #key-features {
-  margin-top: 70px;
+  margin-top: 4rem;
 }
 
 .key-feature__list {
   list-style: none;
   margin: 0;
   background: #f97794;
-  padding: 70px 0;
+  padding: 4rem 0;
   text-align: center;
 }
 
@@ -114,42 +115,49 @@
   color: #fff;
   border: 1px dotted #fff;
   border-radius: 4px;
-  padding: 30px;
-  margin: 0 15px;
+  padding: 1.88rem;
+  margin: 0 1rem;
   vertical-align: top;
 }
 
-.key-feature__image {
+.key-feature__icon {
   margin: auto;
-  font-size: 42px;
+  font-size: 2.65rem;
   color: #fff;
 }
 
 .key-feature__description {
   text-align: center;
   font-weight: bold;
-  font-size: 35px;
-  margin: 10px 0;
+  font-size: 2.19rem;
+  margin: 0.63rem 0;
 }
 
 #team-members {
-  margin-top: 70px;
+  /* max-width: 960px; */
+  margin-top: 4rem;
 }
 
 .team-members__list {
-  list-style: none;
-  margin: 30px 0 0;
+  margin: 1.88rem 0 0;
   padding: 0;
   text-align: center;
 }
 
-.team-member {
+.team-members__padding {
+  max-width: 21%;
   display: inline-block;
-  width: 20%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.team-member {
+  position: relative;
   text-align: center;
-  margin: 0 10px;
   box-shadow: 0px 10px 50px 0px rgba(84, 110, 122, 0.15);
-  border-radius: 0px;
   background: #f9f9f9;
 }
 
@@ -162,26 +170,26 @@
 
 .team-member img {
   width: 100%;
-  height: 300px;
+  height: 19rem;
   vertical-align: middle;
   border-style: none;
 }
 
 .team-member .team-member__details {
-  padding: 20px;
+  padding: 1rem;
   width: 100%;
   text-align: center;
 }
 
 .team-member__details h4 {
-  margin: 0 0 5px;
-  font-size: 18px;
+  margin: 0 0 0.32rem;
+  font-size: 1.13rem;
   color: #263238;
 }
 
 .team-member__details p {
-  margin: 0 0 15px;
-  font-size: 14px;
+  margin: 0 0 0.88rem;
+  font-size: 0.87rem;
   color: #546e7a;
 }
 
@@ -195,12 +203,12 @@
   list-style: none;
   display: inline-block;
   text-decoration: none;
-  height: 34px;
-  line-height: 34px;
-  width: 34px;
+  height: 2.12rem;
+  line-height: 2.12rem;
+  width: 2.12rem;
   background: #fff;
   border-radius: 50px;
-  padding-top: 3px;
+  padding-top: 0.18rem;
 }
 
 .facebook:hover {
