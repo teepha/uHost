@@ -19,7 +19,6 @@ for (let i = 0; i < selectPlanButtons.length; i++) {
 }
 
 backDrop.addEventListener("click", function() {
-  mobileNav.classList.remove("open");
   closeModal();
 });
 
@@ -35,10 +34,11 @@ function closeModal() {
 }
 
 toggleButton.addEventListener("click", function() {
-  mobileNav.classList.add("open");
-  backDrop.classList.add("open");
-});
+  let value = mobileNav.classList.contains("open");
 
-// toggleButton.addEventListener("click", function() {
-//   mobileNav.classList.remove("open");
-// });
+  if (value) {
+    mobileNav.classList.remove("open");
+  } else {
+    mobileNav.classList.add("open");
+  }
+});

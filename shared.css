@@ -40,6 +40,7 @@ body {
 
 .toggle-button {
   width: 3rem;
+  float: right;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -139,15 +140,15 @@ body {
   top: 0;
   left: 0;
   background: white;
-  width: 80%;
-  height: 100vh;
+  width: 100vw;
+  height: 30%;
 }
 
 .mobile-nav__items {
-  width: 90%;
-  height: 100%;
+  width: 80%;
+    height: 55%;
   list-style: none;
-  margin: 10% auto;
+  margin: 100px auto 0;
   padding: 0;
   text-align: center;
 }
@@ -185,3 +186,11 @@ body {
 .open {
   display: block !important;
 }
+
+/* .main-header > div {
+  display: block;
+} */
+
+/* .main-nav {
+  display: none;
+} */
