@@ -1,6 +1,6 @@
 #product-overview {
-  background: url("images/adult-beautiful-blur-712413.jpg") left 10% bottom 55% /
-    cover no-repeat border-box;
+  background: url("images/adult-beautiful-blur-712413.jpg") center/cover
+    no-repeat border-box;
   /* background-image: url("images/adult-beautiful-blur-712413.jpg");
   background-size: cover;
   background-position: left 10% bottom 20%;
@@ -22,6 +22,7 @@
   position: absolute;
   bottom: 5%;
   left: 3%;
+  font-size: 1.8rem;
 }
 
 .section-title {
@@ -33,7 +34,7 @@
 .section-title:before {
   content: "";
   position: absolute;
-  margin-top: 1.9rem;
+  margin-top: 1.8rem;
   width: 5rem;
   height: 0.12rem;
   background: #f97794;
@@ -42,8 +43,9 @@
 
 #plans > div {
   text-align: center;
-  /* width: 90%;
-  margin: auto; */
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 0;
 }
 
 .plan {
@@ -52,11 +54,13 @@
   border-radius: 4px;
   box-shadow: 0px 10px 50px 0px rgba(84, 110, 122, 0.15);
   text-align: center;
-  padding: 1rem;
-  margin: 0.5rem;
-  display: inline-block;
-  width: 30%;
-  vertical-align: middle;
+  padding: 1rem 0 0;
+  margin: 2.3rem auto 0;
+  width: 100%;
+}
+
+.plan:nth-child(even) {
+  transform: scale(1.1);
 }
 
 .plan__annotation {
@@ -94,31 +98,31 @@
 }
 
 .plan__button {
-  padding: 1.58rem 0;
+  padding: 1.9rem 0;
   background: #f9f9f9;
 }
 
 #key-features {
-  margin-top: 4rem;
+  margin-top: 2.6rem;
 }
 
 .key-feature__list {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   background: #f97794;
-  padding: 4rem 0;
+  padding: 4rem 0 3rem;
   text-align: center;
 }
 
 .key-feature {
   display: inline-block;
-  width: 20%;
+  width: 90%;
   text-align: center;
   color: #fff;
   border: 1px dotted #fff;
   border-radius: 4px;
   padding: 1.88rem;
-  margin: 0 1rem;
+  margin-bottom: 1.88rem;
   vertical-align: top;
 }
 
@@ -136,28 +140,26 @@
 }
 
 #team-members {
-  /* max-width: 960px; */
-  margin-top: 4rem;
+  margin-top: 2.6rem;
 }
 
 .team-members__list {
   margin: 1.88rem 0 0;
   padding: 0;
-  text-align: center;
 }
 
 .team-members__padding {
-  max-width: 21%;
-  display: inline-block;
   position: relative;
   width: 100%;
-  min-height: 1px;
+  max-width: 32rem;
+  margin: 0 auto;
   padding-right: 1rem;
   padding-left: 1rem;
 }
 
 .team-member {
   position: relative;
+  margin-bottom: 1.88rem;
   text-align: center;
   box-shadow: 0px 10px 50px 0px rgba(84, 110, 122, 0.15);
   background: #f9f9f9;
@@ -166,13 +168,12 @@
 .team-member:hover {
   box-shadow: 0px 10px 50px 0px rgba(23, 30, 34, 0.3);
   background: transparent;
-  transform: scale(1.1);
-  transition: all 0.3s;
+  transform: scale(1.05);
+  transition: all 0.4s;
 }
 
 .team-member img {
   width: 100%;
-  height: 19rem;
   vertical-align: middle;
   border-style: none;
 }
@@ -185,13 +186,13 @@
 
 .team-member__details h4 {
   margin: 0 0 0.32rem;
-  font-size: 1.13rem;
+  font-size: 1.3rem;
   color: #263238;
 }
 
 .team-member__details p {
   margin: 0 0 0.88rem;
-  font-size: 0.87rem;
+  font-size: 1rem;
   color: #546e7a;
 }
 
@@ -205,12 +206,27 @@
   list-style: none;
   display: inline-block;
   text-decoration: none;
-  height: 2.12rem;
-  line-height: 2.12rem;
-  width: 2.12rem;
+  height: 2.3rem;
+  line-height: 2.3rem;
+  width: 2.3rem;
   background: #fff;
   border-radius: 50px;
   padding-top: 0.18rem;
+}
+
+.team-member .social__link a {
+  text-align: center;
+  color: #f97794;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.team-member .social__link i {
+  font-size: 1.25rem;
+}
+
+.social__link:hover a {
+  color: #ffffff;
 }
 
 .facebook:hover {
@@ -227,16 +243,6 @@
 
 .linkedin:hover {
   background: #007bb6;
-}
-
-.team-member .social__link a {
-  text-align: center;
-  color: #f97794;
-  text-decoration: none;
-}
-
-.social__link:hover a {
-  color: #ffffff;
 }
 
 .modal {
@@ -263,9 +269,9 @@
 
 .modal__action {
   border: 1px solid #0e4f1f;
-  background: #0e4f1f;
+  background: white;
   text-decoration: none;
-  color: white;
+  color: #0e4f1f;
   font: inherit;
   padding: 0.5rem 1rem;
   cursor: pointer;
@@ -278,7 +284,8 @@
 }
 
 .modal__action--negative {
-  background: red;
+  color: red;
+  background: white;
   border-color: red;
 }
 
@@ -286,4 +293,97 @@
 .modal__action--negative:active {
   background: #ff5454;
   border-color: #ff5454;
+}
+
+@media (min-width: 20rem) and (max-width: 30rem) {
+  #plans > div {
+    width: 90%;
+  }
+}
+
+@media (min-width: 36rem) {
+  .key-feature__list {
+    padding: 4rem 0;
+  }
+  .key-feature {
+    width: 33%;
+    max-width: 14.5rem;
+    margin: 1rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  #product-overview {
+    height: 80vh;
+  }
+  #product-overview h1 {
+    font-size: 2.3rem;
+  }
+  .section-title {
+    font-size: 2.3rem;
+  }
+  .section-title:before {
+    margin-top: 2.4rem;
+    width: 8rem;
+  }
+  #plans > div {
+    width: 100%;
+  }
+  .plan {
+    display: inline-block;
+    width: 30%;
+    min-width: 14.5rem;
+    max-width: 26rem;
+    margin: 1.5rem 1% 0;
+    vertical-align: middle;
+  }
+  #key-features {
+    margin-top: 4rem;
+  }
+  .key-feature {
+    width: 40%;
+    max-width: 21rem;
+  }
+  .team-members__list {
+    text-align: center;
+  }
+  .team-members__padding {
+    min-width: 21rem;
+    max-width: 25rem;
+    width: 40%;
+    display: inline-block;
+  }
+  .team-member:active {
+    transform: translateY(-5px);
+  }
+}
+
+@media (min-width: 63rem) {
+  .key-feature__list {
+    padding: 5rem 0;
+  }
+  .key-feature {
+    width: 20%;
+    margin: 0 1rem;
+    max-width: 15rem;
+  }
+  #team-members {
+    margin-top: 4rem;
+  }
+  .team-members__padding {
+    width: 22%;
+    max-width: 17.5rem;
+    min-width: 14.375rem;
+  }
+  .team-member__details h4 {
+    font-size: 1.13rem;
+  }
+  .team-member .social__link {
+    height: 2.12rem;
+    line-height: 2.12rem;
+    width: 2.12rem;
+  }
+  .team-member .social__link i {
+    font-size: 1rem;
+  }
 }
