@@ -24,6 +24,10 @@ section:nth-of-type(1) {
   height: calc(100vh + 53px);
 }
 
+.flex.row {
+  flex-direction: row;
+}
+
 .flex {
   display: flex;
   flex-direction: column;
@@ -169,7 +173,7 @@ section .container {
 }
 
 .header {
-  font-size: 25pt;
+  font-size: 22pt;
   font-weight: bold;
   position: relative;
   color: #444649;
@@ -177,7 +181,7 @@ section .container {
 }
 
 .header-bar {
-  margin: 25px 0 50px 0;
+  margin: 25px 0 75px 0;
   width: 70px;
   height: 4px;
   background: #444649;
@@ -202,6 +206,7 @@ section:nth-of-type(2) .skills-wrapper {
 
 section:nth-of-type(2) .skills-wrapper .me {
   height: 200px;
+  margin-bottom: 20px;
   transform: rotate(90deg);
 }
 
@@ -315,6 +320,7 @@ section:nth-of-type(3) .portfolio-wrap #thumb-1 {
 }
 
 section:nth-of-type(3) .portfolio-wrap #thumb-2 {
+  min-width: 445px;
   background: url(https://static1.squarespace.com/static/597767db3a041174f5e4208b/t/59ca56bea9db098f1ff33768/1507713108236/Nivi+Logo?format=2500w)
     center center/cover;
 }
@@ -328,6 +334,7 @@ section:nth-of-type(3) .portfolio-wrap #thumb-4 {
 }
 
 section:nth-of-type(3) .thumb {
+  max-width: 450px;
   height: 200px;
   margin: 0 0 15px 0;
   box-shadow: 0px 10px 50px 0px rgba(84, 110, 122, 0.15);
@@ -466,11 +473,6 @@ footer .mdi-chevron-double-up {
   /* transition: background 0.5s; */
 }
 
-/* .flex.row > a {
-  text-decoration: none;
-  color: inherit;
-} */
-
 footer .icon-wrap .icon {
   overflow: hidden;
   transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
@@ -484,9 +486,9 @@ footer .icon-wrap .icon {
   font-size: 18pt;
 }
 
-footer .flex.row {
+/* footer .flex.row {
   flex-direction: row;
-}
+} */
 
 footer .icon-wrap .icon:hover {
   background: #04c2c9;
@@ -578,6 +580,7 @@ footer .footnote .highlight {
   }
   section:nth-of-type(2) .skills-wrapper .me {
     height: 250px;
+    margin-bottom: 30px;
   }
   section:nth-of-type(2) .bar {
     height: 28px;
@@ -586,6 +589,12 @@ footer .footnote .highlight {
   }
   section:nth-of-type(3) {
     padding: 120px 0 150px 0;
+  }
+  section:nth-of-type(3) .flex.row {
+    flex-direction: row;
+  }
+  section:nth-of-type(3) .portfolio-wrap {
+    width: 400px;
   }
   section:nth-of-type(3) .portfolio-wrap {
     width: 400px;
@@ -598,7 +607,7 @@ footer .footnote .highlight {
     font-size: 16pt;
   }
   section:nth-of-type(3) .date {
-    font-size: 8.5pt;
+    font-size: 9pt;
   }
   section:nth-of-type(3) .bar {
     margin: 15px 0px;
@@ -606,6 +615,9 @@ footer .footnote .highlight {
   section:nth-of-type(3) .text {
     font-size: 11pt;
     line-height: 15pt;
+  }
+  section:nth-of-type(3) .portfolio-wrap #thumb-2 {
+    min-width: 0;
   }
   section:nth-of-type(4) form {
     min-width: 500px;
@@ -637,9 +649,6 @@ footer .footnote .highlight {
     max-height: 100%;
     box-sizing: border-box;
   }
-  section:nth-of-type(2) .skills-wrapper .me {
-    margin: 0;
-  }
   section:nth-of-type(2) .bars-wrap {
     margin: 0 0 0 0;
   }
@@ -648,5 +657,19 @@ footer .footnote .highlight {
   }
   section:nth-of-type(2) .flex.row {
     flex-direction: row;
+  }
+  section:nth-of-type(3) .portfolio-wrap {
+    width: 400px;
+    margin: 0 0 50px 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  section:nth-of-type(3) .portfolio-wrap {
+    width: 270px;
+    margin: 0 0 50px 20px;
+  }
+  section:nth-of-type(3) .portfolio-wrap #thumb-3 {
+    background: url(images/andela3.jpg) center center/cover;
   }
 }
