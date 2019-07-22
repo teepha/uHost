@@ -139,7 +139,7 @@ nav .link-wrap.visible {
   height: 180px;
 }
 
-nav div.active a {
+nav div.active {
   color: #e31b6d;
 }
 
@@ -307,7 +307,7 @@ section:nth-of-type(3) a {
 section:nth-of-type(3) .portfolio-wrap {
   margin: 0 0 50px 0;
   padding: 0 2px;
-  width: 100%;
+  max-width: 450px;
   cursor: pointer;
 }
 
@@ -447,6 +447,18 @@ section:nth-of-type(4) .button {
   outline: 0;
 }
 
+section:nth-of-type(4) #success {
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  transition: height 0.25s;
+}
+
+section:nth-of-type(4) #success.expand {
+  height: 36px;
+}
+
 footer {
   background: #1b242f;
   padding: 70px 0 50px 0;
@@ -519,6 +531,19 @@ footer .footnote .highlight {
   color: #e31b6d;
 }
 
+@media screen and (min-width: 320px) {
+  section:nth-of-type(3) .portfolio-wrap #thumb-2 {
+    min-width: 0px;
+  }
+  section:nth-of-type(3) .nivi {
+    min-width: 0px;
+  }
+}
+@media (min-width: 450px) and (max-width: 600px) {
+  .nivi {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 600px) {
   body {
     font-size: 12pt;
@@ -592,9 +617,6 @@ footer .footnote .highlight {
   }
   section:nth-of-type(3) .flex.row {
     flex-direction: row;
-  }
-  section:nth-of-type(3) .portfolio-wrap {
-    width: 400px;
   }
   section:nth-of-type(3) .portfolio-wrap {
     width: 400px;

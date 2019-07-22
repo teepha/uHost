@@ -14,6 +14,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="main.css" />
+    <meta name="referrer" content="origin" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="scripts/pt.min.js"></script>
+    <script src="scripts/index.js"></script>
   </head>
   <body>
     <div class="overflow-wrap">
@@ -27,25 +32,17 @@
             I'm a full-stack web developer.
           </div>
           <a href="#portfolio">
-            <div class="button page-link" dest="about">
+            <div class="button page-link" dest="portfolio">
               View my work <i class="mdi mdi-arrow-right"></i>
             </div>
           </a>
 
           <nav class="flex desk">
             <div class="link-wrap">
-              <div class="page-link active" dest="home">
-                <a href="#home">home</a>
-              </div>
-              <div class="page-link" dest="about">
-                <a href="#about">about</a>
-              </div>
-              <div class="page-link" dest="portfolio">
-                <a href="#portfolio">portfolio</a>
-              </div>
-              <div class="page-link" dest="contact">
-                <a href="#contact">contact</a>
-              </div>
+              <div class="page-link active" dest="home">home</div>
+              <div class="page-link" dest="about">about</div>
+              <div class="page-link" dest="portfolio">portfolio</div>
+              <div class="page-link" dest="contact">contact</div>
             </div>
             <i class="mdi mdi-menu"></i>
           </nav>
@@ -260,7 +257,7 @@
               </div>
 
               <div
-                class="portfolio-wrap waypoint animated fade-in"
+                class="portfolio-wrap nivi waypoint animated fade-in"
                 data-animation="fade-in"
                 data-delay=".2s"
                 style="animation-delay: 0.2s;"
@@ -352,9 +349,9 @@
 
       <!-- FOOTER -->
       <footer>
-        <a href="#home"
-          ><i class="mdi mdi-chevron-double-up page-link" dest="home"></i
-        ></a>
+        <a href="#home">
+          <i class="mdi mdi-chevron-double-up page-link" dest="home"></i>
+        </a>
 
         <div class="icon-wrap flex row">
           <a href="https://www.codementor.io/emjaynotmj">
@@ -390,8 +387,6 @@
         </div>
       </footer>
     </div>
-    <script src="scripts/pt.min.js"></script>
     <script src="scripts/canvas.js"></script>
-    <script src="scripts/navBar.js"></script>
   </body>
 </html>
