@@ -4,6 +4,7 @@
   "description": "",
   "main": "mail.js",
   "dependencies": {
+    "dotenv": "^8.0.0",
     "express": "^4.17.1",
     "nodemailer": "^6.3.0",
     "nodemailer-mailgun-transport": "^1.4.0"
