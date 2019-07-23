@@ -15,10 +15,6 @@
     />
     <link rel="stylesheet" href="main.css" />
     <meta name="referrer" content="origin" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="scripts/pt.min.js"></script>
-    <script src="scripts/index.js"></script>
   </head>
   <body>
     <div class="overflow-wrap">
@@ -322,25 +318,20 @@
             id="contact-form"
             style="animation-delay: 0.5s;"
           >
-            <input placeholder="Name" type="text" name="name" required="" />
+            <input placeholder="Name" type="text" id="name" required="" />
             <input
               placeholder="Enter email"
               type="email"
-              name="email"
+              id="email"
               required=""
             />
             <textarea
               placeholder="Your Message"
               type="text"
-              name="message"
+              id="message"
             ></textarea>
             <div id="success">
-              <div>
-                Your message was sent successfully. Thanks!<span
-                  id="close"
-                  class="mdi mdi-close"
-                ></span>
-              </div>
+              <div></div>
             </div>
             <input class="button" type="submit" id="submit" value="SUBMIT" />
           </form>
@@ -387,6 +378,10 @@
         </div>
       </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="scripts/pt.min.js"></script>
+    <script src="scripts/index.js"></script>
     <script src="scripts/canvas.js"></script>
   </body>
 </html>

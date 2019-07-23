@@ -41,9 +41,7 @@ section:nth-of-type(1) {
   left: 0;
   width: 100vw;
   height: 100%;
-  /* background: #252934; */
-  background: url(http://findmatthew.com/style/../img/filler.png) center
-    center/cover;
+  background: url(images/canvas-filler.png) center center/cover;
 }
 
 section:nth-of-type(1) .text {
@@ -419,15 +417,6 @@ section:nth-of-type(4) #success {
   transition: height 0.25s;
 }
 
-section:nth-of-type(4) #success div {
-  background: #04c986;
-  color: #157051;
-  font-size: 10pt;
-  font-weight: 600;
-  padding: 5px 0;
-  border: 1px solid #157c59;
-}
-
 section:nth-of-type(4) #close {
   position: absolute;
   padding: 5px 15px;
@@ -457,6 +446,12 @@ section:nth-of-type(4) #success {
 
 section:nth-of-type(4) #success.expand {
   height: 36px;
+  background: #04c986;
+  color: #157051;
+  font-size: 10pt;
+  font-weight: 600;
+  padding: 5px 0;
+  border: 1px solid #157c59;
 }
 
 footer {
@@ -464,11 +459,6 @@ footer {
   padding: 70px 0 50px 0;
   position: relative;
 }
-
-/* footer > a {
-  text-decoration: none;
-  color: #ffffff;
-} */
 
 footer .mdi-chevron-double-up {
   position: absolute;
@@ -537,6 +527,12 @@ footer .footnote .highlight {
   }
   section:nth-of-type(3) .nivi {
     min-width: 0px;
+  }
+}
+@media (min-width: 320px) and (max-width: 450px) {
+  nav {
+    top: 0;
+    position: fixed;
   }
 }
 @media (min-width: 450px) and (max-width: 600px) {

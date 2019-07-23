@@ -112,23 +112,40 @@ $(function() {
   );
 
   // CONTACT FORM
-  $("#contact-form").submit(function(e) {
+  $("#contact-form").on("submit", e => {
     e.preventDefault();
 
-    // $.ajax({
-    //   url: "https://formspree.io/teepha06@gmail.com",
-    //   method: "POST",
-    //   data: { message: $("form").serialize() },
-    //   dataType: "json"
-    // }).done(function(response) {
-      $("#success").addClass("expand");
+    const name = $("#name")
+      .val()
+      .trim();
+    const email = $("#email")
+      .val()
+      .trim();
+    const message = $("#message")
+      .val()
+      .trim();
+
+    const data = {
+      name,
+      email,
+      message
+    };
+
+    $.post("/email", data, function() {
+      console.log("server received our data");
       $("#contact-form")
         .find("input[type=text], input[type=email], textarea")
         .val("");
-    });
-  // });
+    }).done(function(response) {
+      console.log("res heere", response);
+      $("#success").html("");
+      $("#success")
+        .addClass("expand")
+        .append(response.message, "<i id='close' class='mdi mdi-close'></i>");
 
-  $("#close").click(function() {
-    $("#success").removeClass("expand");
+      $("#close").click(function() {
+        $("#success").removeClass("expand");
+      });
+    });
   });
 });
