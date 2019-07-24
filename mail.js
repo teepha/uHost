@@ -1,4 +1,3 @@
-require("dotenv").config();
 const nodemailer = require("nodemailer");
 const mailGun = require("nodemailer-mailgun-transport");
 
@@ -14,12 +13,12 @@ const transporter = nodemailer.createTransport(mailGun(auth));
 const sendMail = (name, email, message, callback) => {
   const mailOptions = {
     from: email,
-    to: "teepha06@gmail.com",
-    subject: "Message from " + name,
+    to: process.env.RECIPIENT_EMAIL,
+    subject: `Message from ${name} (abdulmujeeb.com)`,
     text: message
   };
 
-  transporter.sendMail(mailOptions, function(err, data) {
+  transporter.sendMail(mailOptions, (err, data) => {
     if (err) {
       callback(err, null);
     } else {

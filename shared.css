@@ -80,7 +80,7 @@ body {
 .main-nav {
   display: none;
   text-align: right;
-  width: calc(100% - 230px);
+  width: calc(100% - 280px);
   vertical-align: middle;
 }
 
