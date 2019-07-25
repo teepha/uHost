@@ -1,10 +1,10 @@
 main {
-  margin-top: 3rem;
   padding: 3rem 0 0;
 }
 
 .background {
-  background: url("../images/action-plan-brainstorming-complex-212286.jpg") center/cover;
+  background: url("../images/action-plan-brainstorming-complex-212286.jpg")
+    center/cover;
   filter: grayscale(30%);
   width: 100vw;
   height: 100vh;
@@ -46,6 +46,14 @@ main {
   border-radius: 5px;
 }
 
+.package__title {
+  font-size: 20px;
+}
+
+#plus__plan .package__title {
+  margin-top: 30px;
+}
+
 .package__subtitle {
   color: #a5a4a2;
 }
@@ -85,4 +93,15 @@ main {
 
 #premium__plan .package__subtitle {
   color: rgb(194, 178, 209);
+}
+
+@media (min-width: 40rem) {
+  main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+  }
+  .package__title {
+    font-size: 24px;
+  }
 }
