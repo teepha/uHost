@@ -10,11 +10,11 @@ main {
 
 .signup-form {
   background-color: #fff;
-  padding: 30px 20px;
-  border-radius: 4px;
+  padding: 1.88rem 1.25rem;
+  border-radius: 4 ;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   width: 90%;
-  max-width: 420px;
+  max-width: 26.25rem;
   margin: auto auto 1.5rem;
 }
 
@@ -30,7 +30,7 @@ main {
   text-transform: capitalize;
   background: #f7f7f7;
   border: 1px solid transparent;
-  padding: 13px 26px;
+  padding: 0.813rem 1.625rem;
   border-radius: 30px;
   background-clip: padding-box;
 }
@@ -91,7 +91,7 @@ main {
   display: block;
   width: 90%;
   margin: 1rem auto 0;
-  padding: 14px 30px 12px;
+  padding: 0.875rem 1.875rem 0.75rem;
   font-size: 1rem;
   text-transform: uppercase;
   background-clip: padding-box;
@@ -102,12 +102,12 @@ main {
     font-size: 1.8rem;
   }
   .signup-form {
-    padding: 58px 40px;
-    max-width: 480px;
+    padding: 3.625rem 2.5rem;
+    max-width: 30rem;
   }
   .signup-form input:not([type="checkbox"]),
   .signup-form select {
-    padding: 15px 30px;
+    padding: 1rem 2rem;
   }
   .signup-form input[id*="terms"],
   .signup-form input[id*="terms"] + label {
