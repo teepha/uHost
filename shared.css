@@ -189,6 +189,13 @@ body {
   outline: none;
 }
 
+.button[disabled] {
+  cursor: not-allowed;
+  border: 1px solid #a1a1a1;
+  background: #ccc;
+  color: #a1a1a1;
+}
+
 .open {
   display: block !important;
 }

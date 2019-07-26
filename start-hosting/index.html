@@ -65,11 +65,11 @@
           <option value="mrs">Mrs.</option>
           <option value="ms">Ms.</option>
         </select>
-        <input type="text" id="first-name" placeholder="Name" />
-        <input type="text" id="last-name" placeholder="Another Name" />
-        <input type="email" id="email" placeholder="Your Email" />
-        <input type="password" id="password" placeholder="Password please..." />
-        <input type="checkbox" id="agree-terms" />
+        <input type="text" id="first-name" placeholder="Name" required minlength="2" />
+        <input type="text" id="last-name" placeholder="Another Name" required minlength="2" />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <input type="password" id="password" placeholder="Password please..." required minlength="4" />
+        <input type="checkbox" id="agree-terms" required />
         <label for="agree-terms"
           >Agree to
           <a href="#">Terms &amp; Conditions</a>

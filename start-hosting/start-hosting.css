@@ -78,10 +78,12 @@ main {
   color: #f97a97;
 }
 
-.signup-form input.invalid,
+/* .signup-form input.invalid,
 .signup-form select.invalid,
-.signup-form :invalid {
-  border-color: #ee7c97;
+.signup-form :invalid,
+.signup-form input:not([type="checkbox"]):invalid, */
+.signup-form .needs-validation :invalid {
+  border-color: red;
   background: #e4b3bf;
 }
 
@@ -89,10 +91,29 @@ main {
   display: block;
   width: 90%;
   margin: 1rem auto 0;
-  padding: 13px 30px;
+  padding: 14px 30px 12px;
   font-size: 1rem;
   text-transform: uppercase;
   background-clip: padding-box;
 }
 
-
+@media (min-width: 36rem) {
+  .signup-title {
+    font-size: 1.8rem;
+  }
+  .signup-form {
+    padding: 58px 40px;
+    max-width: 480px;
+  }
+  .signup-form input:not([type="checkbox"]),
+  .signup-form select {
+    padding: 15px 30px;
+  }
+  .signup-form input[id*="terms"],
+  .signup-form input[id*="terms"] + label {
+    font-size: 1rem;
+  }
+  /* .signup-form button[type="submit"] {
+    font-size: 1rem;
+  } */
+}
