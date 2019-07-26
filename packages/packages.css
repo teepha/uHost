@@ -6,6 +6,7 @@ main {
   background: url("../images/action-plan-brainstorming-complex-212286.jpg")
     center/cover;
   filter: grayscale(30%);
+  opacity: 0.7;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -41,7 +42,7 @@ main {
   margin: 1.25rem;
   font-size: 0.75rem;
   color: white;
-  background: rgb(207, 184, 134);
+  background: rgb(197, 169, 107);
   padding: 0.5rem;
   border-radius: 5px;
 }
@@ -69,22 +70,22 @@ main {
 }
 
 #plus__plan {
-  background: rgba(245, 249, 249, 0.85);
+  background: rgba(245, 249, 249, 0.9);
 }
 
 #free__plan {
-  background: rgba(213, 205, 220, 0.85);
+  background: rgba(205, 186, 221, 0.9);
   float: right;
   margin-right: 1.25rem;
   margin-left: 0;
 }
 
 #premium__plan {
-  background: rgba(243, 234, 214, 0.85);
+  background: rgba(233, 214, 173, 0.9);
 }
 
 #plus__plan .package__subtitle {
-  color: rgb(207, 184, 134);
+  color: rgb(197, 169, 107);
 }
 
 #free__plan .package__subtitle {
@@ -92,7 +93,7 @@ main {
 }
 
 #premium__plan .package__subtitle {
-  color: rgb(194, 178, 209);
+  color: rgb(183, 157, 208);
 }
 
 @media (min-width: 40rem) {
