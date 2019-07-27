@@ -1,6 +1,12 @@
 main {
   padding-top: 1rem;
+  min-height: calc(100vh - 8.9rem);
+  /* min-height: 81vh; */
 }
+
+/* section {
+  padding: 24px 0 16px 0;
+} */
 
 .signup-title {
   text-align: center;
@@ -11,7 +17,7 @@ main {
 .signup-form {
   background-color: #fff;
   padding: 1.88rem 1.25rem;
-  border-radius: 4 ;
+  border-radius: 4px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   width: 90%;
   max-width: 26.25rem;
