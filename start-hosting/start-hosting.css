@@ -1,17 +1,26 @@
 main {
   padding-top: 1rem;
-  min-height: calc(100vh - 8.9rem);
-  /* min-height: 81vh; */
+  min-height: calc(100vh - 8.75rem);
 }
 
-/* section {
-  padding: 24px 0 16px 0;
-} */
+.background {
+  background: url("../images/agenda-composition-fountain-pen-110473.jpg")
+    center/cover;
+  opacity: 0.7;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+
+section {
+  padding-top: 7%;
+}
 
 .signup-title {
   text-align: center;
   font-size: 1.5rem;
-  color: #263238;
+  color: #000000;
 }
 
 .signup-form {
@@ -104,6 +113,9 @@ main {
 }
 
 @media (min-width: 36rem) {
+  section {
+    padding-top: 3%;
+  }
   .signup-title {
     font-size: 1.8rem;
   }
@@ -122,4 +134,10 @@ main {
   /* .signup-form button[type="submit"] {
     font-size: 1rem;
   } */
+}
+
+@media (min-width: 48rem) {
+  main {
+    min-height: calc(100vh - 7.3rem);
+  }
 }
