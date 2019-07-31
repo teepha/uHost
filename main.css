@@ -85,6 +85,7 @@
 
 .plan > h3 {
   color: #263238;
+  padding: 0 0.25rem;
 }
 
 .plan__features li {
@@ -110,11 +111,13 @@
   margin: 0 auto;
   background: #f97794;
   padding: 4rem 0 3rem;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .key-feature {
-  display: inline-block;
   width: 90%;
   text-align: center;
   color: #fff;
@@ -145,13 +148,15 @@
 .team-members__list {
   margin: 1.88rem 0 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .team-members__padding {
   position: relative;
-  width: 100%;
   max-width: 32rem;
-  margin: 0 auto;
   padding-right: 1rem;
   padding-left: 1rem;
 }
@@ -198,12 +203,13 @@
 .social__links {
   margin: 0;
   padding: 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .team-member .social__link {
   list-style: none;
-  display: inline-block;
+  margin: 0 0.2rem;
   text-decoration: none;
   height: 2.3rem;
   line-height: 2.3rem;
@@ -214,7 +220,6 @@
 }
 
 .team-member .social__link a {
-  text-align: center;
   color: #f97794;
   text-decoration: none;
   vertical-align: middle;
@@ -297,14 +302,16 @@
 @media (min-width: 20rem) and (max-width: 30rem) {
   #plans > div {
     width: 100%;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
 @media (min-width: 36rem) {
   .key-feature__list {
     padding: 4rem 0;
+    flex-direction: row;
+    justify-content: center;
   }
   .key-feature {
     width: 33%;
@@ -329,9 +336,11 @@
   }
   #plans > div {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .plan {
-    display: inline-block;
     width: 30%;
     min-width: 14.5rem;
     max-width: 26rem;
@@ -339,9 +348,6 @@
     transform: none;
     vertical-align: middle;
   }
-  /* .plan > h3 {
-    font-size: 1rem;
-  } */
   #key-features {
     margin-top: 4rem;
   }
@@ -350,13 +356,14 @@
     max-width: 21rem;
   }
   .team-members__list {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   .team-members__padding {
-    min-width: 21rem;
     max-width: 25rem;
     width: 40%;
-    display: inline-block;
+    margin: 0;
   }
   .team-member:active {
     transform: translateY(-5px);
@@ -366,7 +373,7 @@
 @media (min-width: 48rem) and (max-width: 53rem) {
   .plan {
     width: 32%;
-    transform: scale(1.05);
+    transform: scale(1.03);
     margin-left: 0;
     margin-right: 0;
   }
@@ -390,7 +397,6 @@
   .team-members__padding {
     width: 22%;
     max-width: 17.5rem;
-    min-width: 14.375rem;
   }
   .team-member__details h4 {
     font-size: 1.13rem;
