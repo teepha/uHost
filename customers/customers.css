@@ -12,7 +12,6 @@
 .testimonial__image {
   width: 100%;
   vertical-align: top;
-  /* display: block; */
 }
 
 .testimonial__info {
@@ -61,17 +60,17 @@
   .testimonial {
     margin: 3rem auto;
     max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
   .testimonial__image-container {
     width: 65%;
     max-width: 800px;
-    display: inline-block;
-    vertical-align: middle;
+    margin: 0;
     box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.5);
   }
   .testimonial__info {
-    display: inline-block;
-    vertical-align: middle;
     width: 30%;
   }
 }
