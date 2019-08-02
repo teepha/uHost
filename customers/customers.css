@@ -54,6 +54,7 @@
 
 .testimonial__text {
   margin: 0.19rem;
+  white-space: unset;
 }
 
 @media (min-width: 40rem) {
@@ -72,5 +73,8 @@
   }
   .testimonial__info {
     width: 30%;
+  }
+  .testimonial__text {
+    white-space: pre-line;
   }
 }
