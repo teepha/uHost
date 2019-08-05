@@ -1,3 +1,8 @@
+body {
+  display: block;
+  grid-template-rows: none;
+}
+
 #product-overview {
   background: url("images/adult-beautiful-blur-712413.jpg") center/cover
     no-repeat border-box;

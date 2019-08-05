@@ -1,3 +1,6 @@
+main > div {
+  margin: 2rem auto;
+}
 .testimonial {
   font-size: 1.2rem;
   margin: 1rem auto;
@@ -22,7 +25,6 @@
 #customer-2.testimonial,
 #customer-4.testimonial {
   text-align: right;
-  margin-bottom: 2rem;
 }
 
 #customer-2 .testimonial__info,
@@ -58,8 +60,10 @@
 }
 
 @media (min-width: 40rem) {
+  main > div {
+    margin: 2.5rem auto;
+  }
   .testimonial {
-    margin: 3rem auto;
     max-width: 1300px;
     display: flex;
     align-items: center;
