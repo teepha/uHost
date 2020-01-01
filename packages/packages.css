@@ -2,6 +2,10 @@ main {
   padding: 3rem 0 0;
 }
 
+main::-webkit-scrollbar {
+  display: none;
+}
+
 .background {
   background: url("../images/action-plan-brainstorming-complex-212286.jpg")
     center/cover;
